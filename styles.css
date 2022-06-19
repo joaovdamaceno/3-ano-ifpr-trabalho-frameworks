@@ -85,6 +85,7 @@ li > .nav-link {
     background-color: #fff;
     padding: 25px;
     transition: all 0.35s ease;
+
 }
 
 .card-effect:hover{
@@ -140,6 +141,7 @@ footer .social-icons a:hover{
     color: var(--bs-primary) !important;
     font-size: 20px;
 }
+
 
 /*! `Custom` Bootstrap 5 theme */@import url(https://fonts.googleapis.com/css?family=Lato:200,300,400,700);/*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
