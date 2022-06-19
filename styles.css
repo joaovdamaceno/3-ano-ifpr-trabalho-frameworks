@@ -20,6 +20,13 @@ li > .nav-link {
     background-color:rgba(0,0,0,.15)!important;
 }
 
+#boxopnioes{
+    width: fit-content;
+    border-radius: 0.25rem;
+    background-color: var(--bs-light)!important;
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem !important;
+}
+
 #button {
     padding: 0.6rem 1.2rem;
     margin-right: 0.8rem;
@@ -69,7 +76,7 @@ li > .nav-link {
     margin-top:-1rem;
 }
 
-a {
+.blogtitle {
     text-decoration: none !important;
 }
 
@@ -83,6 +90,11 @@ a {
 .card-effect:hover{
     box-shadow:none !important;
     transform: translateY(5px);
+}
+
+.depoimento{
+    border-radius: 5px;
+    display: flex;
 }
 
 /*! `Custom` Bootstrap 5 theme */@import url(https://fonts.googleapis.com/css?family=Lato:200,300,400,700);/*!
