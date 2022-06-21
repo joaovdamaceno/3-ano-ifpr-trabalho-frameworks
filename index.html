@@ -11,27 +11,35 @@
     <title>Psique - Encontre seu psicólogo</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary navbar-primary">
+    <nav class="navbar navbar-expand-md bg-primary navbar-primary">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img src="images\psique_logo_icon.png" style="max-width: 9rem;" alt="">
             </a>
 
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
+                    <li class="nav-item" id="computer">
                         <a href="#precos" class="nav-link text-light lead">Preços</a>
                     </li> 
+                    <li class="nav-item mobile">
+                        <a href="#precos" class="nav-link text-light lead" style="margin-top: 1rem;">Preços</a>
+                    </li> 
+                    <hr class="mobile" style="width:100%;text-align:left; opacity: 15%;">
                     <li class="nav-item">                    
                         <a href="#conversecomumpsicologo" class="nav-link text-light lead">Converse com um Psicologo</a>
                     </li> 
+                    <hr class="mobile" style="width:100%;text-align:left; opacity: 15%;">
                     <li class="nav-item">                    
                         <a href="#contato" class="nav-link text-light lead">Contato</a> 
                     </li>     
+                    <hr class="mobile" style="width:100%;text-align:left;opacity: 15%;">
                 </ul>
                 <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
@@ -44,9 +52,11 @@
                                 <li><a class="dropdown-item" href="#">Como médico</a></li>
                             </ul>
                         </li>
+                        <hr class="mobile" style="width:100%;text-align:left;opacity: 15%;">
                         <li class="nav-item">
-                            <a href="#precos" class="nav-link text-light lead"><strong>Entrar<strong>   </a>
+                            <a href="#precos" class="nav-link text-light lead"><strong>Entrar<strong></a>
                         </li>
+                        <hr class="mobile" style="width:100%;text-align:left;opacity: 15%;">
                     </ul>  
             </div>
     </nav>
@@ -55,14 +65,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-6">
-                        <h2 class="text-light" style="margin-bottom:-0.1rem;"><strong>Encontre seu psicólogo</strong></h2>
-                        <h5 class="text-light opacity-75" style="margin-bottom:1rem;"><strong>Mais de 15 mil profissionais prontos para lhe ajudar</strong></h5>
+                        <h2 class="text-light" style="margin-bottom:-0.1rem;" id="computer"><strong>Encontre seu psicólogo</strong></h2>
+                        <h5 class="text-light opacity-75" style="margin-bottom:1.5rem;" id="computer"><strong>Mais de 15 mil profissionais prontos para lhe ajudar</strong></h5>
+                        <h1 class="text-light mobile" style="margin-bottom:-0.1rem; font-size: 32px;"><strong>Encontre seu psicólogo</strong></h2>
+                        <h4 class="text-light opacity-75 mobile" style="margin-bottom:3rem; font-size: 20px;"><strong>Mais de 15 mil profissionais prontos para lhe ajudar</strong></h5>
                         <div id="box" class="col-2 p-3 mb-2 bg-dark text-white">
                             <div class="d-flex">
                                 <button id="button" class="btn btn-outline-light btn-sm"><i class="bi bi-house-door-fill me-2"></i></i><strong>No Local</strong></button>
                                 <button id="button" class="btn btn-outline-light btn-sm"><i class="bi bi-camera-video-fill me-2"></i></i><strong>Teleconsulta</strong></button>
                             </div>
-                            <div class="d-flex mt-3">
+                            <div class="d-flex mt-3" id="computer">
                                 <form class="" role="search">
                                     <input id="search-box-1" class="form-control" type="search" placeholder="nome, especialidade, serviço" aria-label="nome, especialidade, serviço">
                                 </form>
@@ -70,6 +82,15 @@
                                     <input id="search-box-2" class="form-control" type="search" placeholder="p. ex. São Paulo" aria-label="p. ex. São Paulo">
                                 </form>
                                 <a name="" id="search" class="btn btn-primary text-light fw-bold" href="#" role="button"><i id="icon" class="bi bi-search me-1"></i>Procurar</a>
+                            </div>
+                            <div class="mobile">
+                                <form class="" role="search">
+                                    <input id="search-box-1-mobile" class="form-control" type="search" placeholder="nome, especialidade, serviço" aria-label="nome, especialidade, serviço">
+                                </form>
+                                <form class="" role="search">
+                                    <input id="search-box-2-mobile" class="form-control" type="search" placeholder="p. ex. São Paulo" aria-label="p. ex. São Paulo">
+                                </form>
+                                <a name="" id="search-mobile" class="btn btn-primary text-light fw-bold" href="#" role="button"><i id="icon" class="bi bi-search me-1"></i>Procurar</a>
                             </div>
                         </div>
                     </div>
@@ -114,7 +135,26 @@
         </div>
     </section>
     <hr style="width:100%;text-align:left;margin-top:-2.5rem; opacity: 15%;">
-    <section class="p-5">
+    <section class="p-5 mobile">
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-md">
+                    <img src="images\saibamais_bg.png" style="width:98%; margin-top:-1rem;" alt="">
+                </div>
+                <div class="col-md" style="margin-bottom:2.5rem;">
+                    <h2 class="text-primary" style="margin-top:1rem; font-size:27px;">O que é Psique?</h2>
+                    <p class="lead" style="opacity:70%; font-size:19px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ad, a est, rem error laboriosam et nisi odio quae expedita saepe quos, consectetur beatae placeat ut quasi corrupti necessitatibus doloribus!
+                    </p>
+                    <p class="lead" style="opacity:70%; font-size:19px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate eligendi exercitationem provident consectetur modi, similique earum totam officiis hic vitae expedita veniam nobis quam aperiam. Eaque veritatis soluta explicabo.
+                    </p>
+                    <a name="" id="saibamais" class="btn btn-outline-primary fw-bold" href="#" role="button">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5" id="computer">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md">
@@ -133,7 +173,7 @@
             </div>
         </div>
     </section>
-    <section >
+    <section id="computer">
         <div class="container" style="margin-top:2rem;">
             <div class="row mb-5">
                 <div class="col-md-8 mx-auto text-center">
@@ -178,67 +218,53 @@
             </div>
         </div>
     </section>
-    <div class="block">
-        <div class="container">
-            <div class="col-md-8 mx-auto text-center" style="margin-top:5rem;">
-                <h6 class="text-primary">DEPOIMENTOS</h6>
-                <h2>Opniões recentes</h2>
-                <p class="fw-normal" style="opacity:70%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <section class="mobile">
+        <div class="container" style="margin-top:2rem;">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h5 class="text-primary">BLOG</h5>
+                    <h1>Ultimas noticias</h1>
+                    <p class="fw-light fs-3" style="opacity:70%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos a necessitatibus atque error voluptatum rem, voluptatibus maiores at blanditiis sed distinctio dignissimos. Odio quas beatae nesciunt modi nobis natus molestias obcaecati fugit nostrum, neque nemo sequi non delectus veritatis.</p>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-md-6" style="margin-top: 2rem;">
-                    <div class="depoimento">
-                        <img style="width:10%; height: 10%; margin-right: 1rem; border-radius: 0.5rem;" src="images/icon_profile1.jpg" alt="">
-                        <div class="depoimento-texto pl-3">
-                            <p class="fw-bold text-primary d-flex" style="font-size: 16px;">Vera Lama<i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"></i></i></i></i></i></p>
-                            <div id="boxopnioes">
-                            <p class="fw-light" style="opacity:70%; font-size: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium amet non ipsam blanditiis saepe vero nobis dignissimos.</p>
-                            <p class="fst-italic fw-light" style="opacity:70%; font-size: 15px; margin-bottom: 0rem;">Luana Matos</p>
-                            </div>
-                        </div>
+            <div class="row" style="margin-top:-1rem;">
+                <div class="col-md-4">
+                    <div class="blog-post card-effect">
+                        <img class="w-100" src="images/blog_image1.png" alt="">
+                        <h2 style="margin-top:1rem;"><a href="#" class="blogtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a></h2>
+                        <p class="fw-normal fs-5" style="opacity:70%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium amet non ipsam blanditiis saepe vero nobis dignissimos.</p>
+                        <p class="fw-light" style="font-size: 12px; margin-top:-0.5rem;">Há 6 horas</p>
                     </div>
                 </div>
-                <div class="col-md-6" style="margin-top: 2rem;">
-                    <div class="depoimento">
-                        <img style="width:10%; height: 10%; margin-right: 1rem; border-radius: 0.5rem;" src="images/icon_profile2.jpg" alt="">
-                        <div class="depoimento-texto pl-3">
-                            <p class="fw-bold text-primary d-flex" style="font-size: 16px;">Otávio Bundasseca<i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"></i></i></i></i></i></p>
-                            <div id="boxopnioes">
-                            <p class="fw-light" style="opacity:70%; font-size: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium amet non ipsam blanditiis saepe vero nobis dignissimos.</p>
-                            <p class="fst-italic fw-light" style="opacity:70%; font-size: 15px; margin-bottom: 0rem;">Ana Julia</p>
-                            </div>
-                        </div>
+                <div class="col-md-4">
+                    <div class="blog-post card-effect">
+                        <img class="w-100" src="images/blog_image2.png" alt="">
+                        <h2 style="margin-top:1rem;"><a href="#" class="blogtitle">Dolores fuga iste laborum eum aspernatur quos?</a></h2>
+                        <p class="fw-normal fs-5" style="opacity:70%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium amet non ipsam blanditiis saepe vero nobis dignissimos.</p>
+                        <p class="fw-light" style="font-size: 12px; margin-top:-0.5rem;">Há 6 horas</p>
                     </div>
                 </div>
-                <div class="col-md-6" style="margin-top: 2rem;">
-                    <div class="depoimento">
-                        <img style="width:10%; height: 10%; margin-right: 1rem; border-radius: 0.5rem;" src="images/icon_profile3.jpg" alt="">
-                        <div class="depoimento-texto pl-3">
-                            <p class="fw-bold text-primary d-flex" style="font-size: 16px;">Colápso Cardíaco da Silva<i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"></i></i></i></i></i></p>
-                            <div id="boxopnioes">
-                            <p class="fw-light" style="opacity:70%; font-size: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium amet non ipsam blanditiis saepe vero nobis dignissimos.</p>
-                            <p class="fst-italic fw-light" style="opacity:70%; font-size: 15px; margin-bottom: 0rem;">Edu Souza</p>
-                            </div>
-                        </div>
+                <div class="col-md-4">
+                    <div class="blog-post card-effect">
+                        <img class="w-100" src="images/blog_image3.png" alt="">
+                        <h2 style="margin-top:1rem;"><a href="#" class="blogtitle">Tempora ad voluptatibus omnis dicta architecto!</a></h2>
+                        <p class="fw-normal fs-5" style="opacity:70%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium amet non ipsam blanditiis saepe vero nobis dignissimos.</p>
+                        <p class="fw-light" style="font-size: 12px; margin-top:-0.5rem;">Há 6 horas</p>
                     </div>
                 </div>
-                <div class="col-md-6" style="margin-top: 2rem;">
-                    <div class="depoimento">
-                        <img style="width:10%; height: 10%; margin-right: 1rem; border-radius: 0.5rem;" src="images/icon_profile4.jpg" alt="">
-                        <div class="depoimento-texto pl-3">
-                            <p class="fw-bold text-primary d-flex" style="font-size: 16px;">Antônio Morrendo das Dores<i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"><i class="bi bi-star-fill text-primary ms-auto"></i></i></i></i></i></p>
-                            <div id="boxopnioes">
-                            <p class="fw-light" style="opacity:70%; font-size: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium amet non ipsam blanditiis saepe vero nobis dignissimos.</p>
-                            <p class="fst-italic fw-light" style="opacity:70%; font-size: 15px; margin-bottom: 0rem;">Adriano da Costa</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="text-center text-primary">
+                <a href=""><i class="bi bi-circle-fill" style="margin-right: 0.25rem; font-size: 0.8rem;"></i></a>
+                <a href=""><i class="bi bi-circle" style="margin-right: 0.25rem; font-size: 0.8rem;"></i></a>
+                <a href=""><i class="bi bi-circle" style="margin-right: 0.25rem; font-size: 0.8rem;"></i></a>
+                <a href=""><i class="bi bi-circle" style="margin-right: 0.25rem; font-size: 0.8rem;"></i></a>
+                <a href=""><i class="bi bi-circle" style="margin-right: 0.25rem; font-size: 0.8rem;"></i></a>
+                <a href=""><i class="bi bi-circle" style="font-size: 0.8rem;"></i></i></a>
             </div>
         </div>
-    </div>
+    </section>
     <hr style="width:100%;text-align:left;margin-top:5rem; opacity: 15%;">
-    <footer>
+    <footer id="computer">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -273,9 +299,67 @@
                             <a href="#">Alerta de segurança</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                         <img src="images/psique_logo_icon_blue.png" style="margin-top: -0.5rem; width: 9rem;" alt="">
-                        <p class="footer-description" style="margin-top: 0.5rem;">Psique Brasil Serviços Online e <br> Software Ltda <br> Rua 1 do Lado da Rua 2, 352 - 1º <br> andar - Infraero <br>52410-320 Foz do Iguaçu (Paraná), Brasil</p>
+                        <p class="footer-description" style="margin-top: 0.5rem;">Psique Brasil Serviços Online e Software Ltda  Rua 1 do Lado da Rua 2, 352 - 1º andar - Infraero 52410-320 Foz do Iguaçu (Paraná), Brasil</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr style="width:100%;text-align:left;margin-top:2.5rem; opacity: 15%;">
+            <div class="container">
+                    <div class="text-center" style="margin-top: 2rem;">
+                        <p class="fw-light">www.psique.com.br © 2022 - Encontre seu psicólogo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="mobile">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2" style="margin-right:5rem;">
+                        <h5 class="title-sm text-primary fs-5">Serviços</h5>
+                        <div class="footer-links">
+                            <a href="#" style="margin-top: 0.5rem;">Privacidade e cookies</a>
+                            <a href="#">Quem somos</a>
+                            <a href="#">Contato</a>
+                            <a href="#">Vagas</a>
+                            <a href="#">Termos e Condições</a>
+                            <a href="#">Imprensa</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="margin-right:5rem; margin-top: 1.5rem;">
+                        <h5 class="title-sm text-primary fs-5">Pacientes</h5>
+                        <div class="footer-links">
+                            <a href="#" style="margin-top: 0.5rem;">Especialistas</a>
+                            <a href="#">Clínicas e Hospitais</a>
+                            <a href="#">Pergunte ao Psicólogo</a>
+                            <a href="#">Perguntas Frequentes</a>
+                            <a href="#">Diagnóstico online</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="margin-right:3rem; margin-top: 1.5rem;">
+                        <h5 class="title-sm text-primary fs-5">Para psicólogos</h5>
+                        <div class="footer-links">
+                            <a href="#" style="margin-top: 0.5rem;">Soluções</a>
+                            <a href="#">Preço</a>
+                            <a href="#">Conteúdos</a>
+                            <a href="#">Termos de Uso</a>
+                            <a href="#">Alerta de segurança</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="images/psique_logo_icon_blue.png" style="margin-top: 1.5rem; width: 9rem;" alt="">
+                        <p class="footer-description" style="margin-top: 1rem;">Psique Brasil Serviços Online e <br> Software Ltda <br> Rua 1 do Lado da Rua 2, 352 - 1º <br> andar - Infraero <br>52410-320 Foz do Iguaçu (Paraná), Brasil</p>
                         <div class="social-icons">
                             <a href="#"><i class="bi bi-facebook"></i></a>
                             <a href="#"><i class="bi bi-twitter"></i></a>
