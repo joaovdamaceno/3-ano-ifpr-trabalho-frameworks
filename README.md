@@ -2,7 +2,7 @@
 
 Trabalho feito com o objetivo de criar um site ultilizando frameworks
 
-![](https://github.com/3-ano-ifpr-trabalho-frameworks/README_gif.gif)
+<img src="./README_gif.gif"/>
 
 <strong>Objetivos</strong>
 
