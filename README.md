@@ -1,6 +1,6 @@
-# Trabalho de Frameworks ultilizando Bootstrap
+# Trabalho de Frameworks utilizando Bootstrap
 
-Trabalho feito com o objetivo de criar um site ultilizando frameworks
+Projeto realizado visando criar um site responsivo utilizando Bootstrap.
 
 <img src="./README_gif.gif"/>
 
@@ -8,5 +8,4 @@ Trabalho feito com o objetivo de criar um site ultilizando frameworks
 
 - [X] Criar aplicação responsiva
 - [X] Usar sistemas de layout
-- [X] Ultilizar ao menos 5 componentes do Bootstrap 5
-
+- [X] Utilizar ao menos 5 componentes do Bootstrap 5
